@@ -1,0 +1,6 @@
+{
+ "palette": {"bg": "#0B0F17", "ink": "#E6EDF3", "accent": "#38BDF8", "accent2": "#F59E0B", "alert": "#EF4444", "muted": "#8B98A9"},
+ "fonts": {"display": {"family": "Anton", "weights": [400]}, "body": {"family": "Inter", "weights": [400, 700]}, "mono": {"family": "JetBrains Mono", "weights": [400, 700]}},
+ "caption": {"style": "sentence", "size": 46, "position": "lower", "uppercase": false},
+ "grain": 0
+}

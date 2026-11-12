@@ -1,0 +1,66 @@
+{
+ "_doc": "Voice personas for free-voiceover (Kokoro, local). Settings resolve persona -> <project>/audio/voice.json -> command-line flags. voices: audition candidates, first is the default. wps: spoken words per second of line audio (a starting guess; voice.py measures the real value into audio/voice_timing.json and the lint uses it). Seconds: beat = one *(beat)* cue, inhale = pause before an *(inhale)* line, line_gap within a scene, scene_gap between scenes, lead_in before the first word, tail after the last. fx_chain: HyperFrames data-fx-chain nodes for the voiceover group, written by video-studio/scripts/audio_bed.py (the wav itself stays dry).",
+
+ "explainer": {
+  "label": "Explainer (channel default)",
+  "for": "explainers and fast history/science stories",
+  "paid_reference": "any clear documentary narrator",
+  "voices": ["am_michael", "bm_george", "af_heart"],
+  "speed": 1.0, "wps": 2.7, "beat": 0.9, "inhale": 0.45,
+  "lead_in": 0.5, "line_gap": 0.35, "scene_gap": 0.8, "tail": 1.0,
+  "fx_chain": []
+ },
+
+ "confessor": {
+  "label": "4 A.M. Confessor",
+  "for": "human-first faith and drama Shorts: tired, close, unpolished, never a narrator voice",
+  "paid_reference": "a person whispering in a parked car at 4 a.m.",
+  "voices": ["am_michael", "am_puck", "af_heart"],
+  "speed": 0.82, "wps": 2.25, "beat": 1.2, "inhale": 0.45,
+  "lead_in": 0.5, "line_gap": 0.45, "scene_gap": 0.9, "tail": 1.0,
+  "fx_chain": [
+   {"type": "highpass", "id": "hp", "label": "Close mic: cut rumble", "params": {"frequency": 80, "q": 0.707, "poles": "2"}},
+   {"type": "lowshelf", "id": "prox", "label": "Close mic: proximity warmth", "params": {"frequency": 200, "gain": 2}}
+  ]
+ },
+
+ "historian": {
+  "label": "Midnight Historian",
+  "for": "investigative lore, myth vs. truth, history and science essays: warm, calm, slightly wry",
+  "paid_reference": "ElevenLabs: a warm documentary baritone",
+  "voices": ["bm_george", "bm_fable", "am_fenrir"],
+  "speed": 0.95, "wps": 2.6, "beat": 1.0, "inhale": 0.45,
+  "lead_in": 0.5, "line_gap": 0.35, "scene_gap": 0.9, "tail": 1.0,
+  "fx_chain": [
+   {"type": "highpass", "id": "hp", "label": "Cut rumble", "params": {"frequency": 60, "q": 0.707, "poles": "2"}},
+   {"type": "peaking", "id": "warm", "label": "Warm low-mid", "params": {"frequency": 120, "gain": 2.5, "q": 1}}
+  ]
+ },
+
+ "chronicler": {
+  "label": "Mythic Chronicler",
+  "for": "apocrypha sagas and royal tragedies: deep, solemn, monumental weight",
+  "paid_reference": "ElevenLabs: Adam, Antony or Marcus, stability 65%, style 15%",
+  "voices": ["am_onyx", "bm_lewis", "am_fenrir"],
+  "speed": 0.82, "wps": 2.45, "beat": 1.2, "inhale": 0.45,
+  "lead_in": 0.5, "line_gap": 0.45, "scene_gap": 1.0, "tail": 1.5,
+  "fx_chain": [
+   {"type": "highpass", "id": "hp", "label": "Cut rumble", "params": {"frequency": 50, "q": 0.707, "poles": "2"}},
+   {"type": "peaking", "id": "chest", "label": "Chest resonance", "params": {"frequency": 110, "gain": 3, "q": 1}},
+   {"type": "reverb", "id": "room", "label": "Stone chamber", "params": {"size": 0.6, "damping": 0.5, "wet": 0.12, "dry": 0.9}}
+  ]
+ },
+
+ "storybook": {
+  "label": "Warm Storybook Keeper",
+  "for": "illustrated parables and nature allegories: gentle, unhurried, read beside a fire",
+  "paid_reference": "a soft alto or tenor reading by a fireplace",
+  "voices": ["af_bella", "bm_fable", "bf_emma"],
+  "speed": 0.8, "wps": 2.3, "beat": 1.2, "inhale": 0.45,
+  "lead_in": 0.5, "line_gap": 0.45, "scene_gap": 1.5, "tail": 1.5,
+  "fx_chain": [
+   {"type": "peaking", "id": "warm", "label": "Warm body", "params": {"frequency": 160, "gain": 1.5, "q": 1}},
+   {"type": "highshelf", "id": "soft", "label": "Soft top", "params": {"frequency": 6500, "gain": -3}}
+  ]
+ }
+}

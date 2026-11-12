@@ -1,0 +1,36 @@
+{
+  "name": "motion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared Remotion workspace for vault-film: one folder per film in src/films/<slug>/, one composition per Remotion chapter.",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5",
+    "@fontsource/cormorant-garamond": "^5",
+    "@fontsource/fredoka": "^5",
+    "@fontsource/inter": "^5",
+    "@fontsource/jetbrains-mono": "^5",
+    "@remotion/cli": "4.0.542",
+    "@remotion/paths": "4.0.542",
+    "@remotion/shapes": "4.0.542",
+    "@remotion/transitions": "4.0.542",
+    "d3-geo": "^3.1.1",
+    "react": "^19",
+    "react-dom": "^19",
+    "remotion": "4.0.542",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "^3.1.0",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/topojson-client": "^3.1.5",
+    "@types/topojson-specification": "^1.0.5",
+    "typescript": "^5"
+  }
+}

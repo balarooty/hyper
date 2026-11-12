@@ -1,0 +1,13 @@
+{
+ "title": "<Title>",
+ "slug": "<slug>",
+ "aspect": "16:9",
+ "fps": 30,
+ "pack": "code-explainer",
+ "chapters": [
+  {"id": "c01", "title": "Hook and setup", "engine": "remotion", "shots": "01-04", "join": "cut"},
+  {"id": "c02", "title": "The mechanism", "engine": "remotion", "shots": "05-09", "join": "cut"},
+  {"id": "c03", "title": "The human moment", "engine": "canvas", "shots": "10-12", "join": "dip"},
+  {"id": "c04", "title": "Payoff", "engine": "remotion", "shots": "13-15", "join": "dip"}
+ ]
+}

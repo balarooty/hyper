@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vault-film style samples</title>
+<style>
+  :root { --bg: #101014; --card: #1a1a21; --ink: #f0f0f2; --mu: #a0a0ad; --acc: #f5a623; }
+  @media (prefers-color-scheme: light) { :root { --bg: #f4f3ef; --card: #ffffff; --ink: #1c1c22; --mu: #5d5d6b; --acc: #b86a00; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px 16px 48px; background: var(--bg); color: var(--ink); font: 16px/1.45 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  header { max-width: 1500px; margin: 0 auto 20px; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--mu); max-width: 70ch; }
+  main { max-width: 1500px; margin: 0 auto; display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); }
+  article { background: var(--card); border-radius: 12px; padding: 12px; }
+  video { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #000; border-radius: 8px; display: block; }
+  h2 { font-size: 18px; margin: 12px 0 4px; }
+  p { margin: 0 0 8px; color: var(--mu); }
+  code { display: block; font: 13px/1.4 ui-monospace, Menlo, monospace; background: var(--bg); padding: 8px 10px; border-radius: 6px; overflow-wrap: anywhere; }
+  .links { margin: 10px 0 0; font-size: 14px; }
+  a { color: var(--acc); }
+</style></head>
+<body>
+  <header>
+    <h1>vault-film: 16 animation styles, 10 seconds each</h1>
+    <p>Silent look samples. Fifteen are drawn in code on the canvas engine to show each style's look; the 3D cartoon world is rendered from the real template. A real film is built on the style's own engine, with voice and sound. Copy a prompt to start one.</p>
+  </header>
+  <main>
+    <article>
+      <video src="schematic-explainer.mp4" autoplay loop muted playsinline></video>
+      <h2>1. Schematic explainer</h2>
+      <p>Blueprint cutaways, parts that spring in, labels and counters.</p>
+      <code>/vault-film schematic explainer, 90 seconds: why sea mines have spikes</code>
+      <p class="links"><a href="sheets/schematic-explainer.jpg">frame sheet</a> · <a href="../schematic-explainer.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="continuous-canvas-explainer.mp4" autoplay loop muted playsinline></video>
+      <h2>2. Continuous-canvas explainer</h2>
+      <p>One drawing that pans and morphs, almost no cuts.</p>
+      <code>/vault-film continuous-canvas explainer, 75 seconds: why train wheels are cones</code>
+      <p class="links"><a href="sheets/continuous-canvas-explainer.jpg">frame sheet</a> · <a href="../continuous-canvas-explainer.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="bizarre-history-story.mp4" autoplay loop muted playsinline></video>
+      <h2>3. Bizarre-history story</h2>
+      <p>Fast-cut cartoon story with a built-in contradiction.</p>
+      <code>/vault-film bizarre-history story, 2 minutes: the fake bus stops outside care homes</code>
+      <p class="links"><a href="sheets/bizarre-history-story.jpg">frame sheet</a> · <a href="../bizarre-history-story.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="cartoon-3d-world.mp4" autoplay loop muted playsinline></video>
+      <h2>4. 3D cartoon world</h2>
+      <p>Flat cartoon characters in a painted 3D town. Rendered from the real three.js template.</p>
+      <code>/vault-film 3D cartoon world, 70 seconds, vertical: a crowd walking in step broke something</code>
+      <p class="links"><a href="sheets/cartoon-3d-world.jpg">frame sheet</a> · <a href="../cartoon-3d-world.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="neon-dilemma.mp4" autoplay loop muted playsinline></video>
+      <h2>5. Neon dilemma</h2>
+      <p>Two players, one deal, neon figures on black.</p>
+      <code>/vault-film neon dilemma, 2 minutes: one cent doubling daily against a salary</code>
+      <p class="links"><a href="sheets/neon-dilemma.jpg">frame sheet</a> · <a href="../neon-dilemma.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="ink-line-essay.mp4" autoplay loop muted playsinline></video>
+      <h2>6. Ink-line essay</h2>
+      <p>Black, white and sepia line drawings, silhouettes and maps.</p>
+      <code>/vault-film ink-line essay, 6 minutes: why only one human species is left</code>
+      <p class="links"><a href="sheets/ink-line-essay.jpg">frame sheet</a> · <a href="../ink-line-essay.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="deep-sea-descent.mp4" autoplay loop muted playsinline></video>
+      <h2>7. Deep-sea descent</h2>
+      <p>Dark nature explainer: X-ray reveals, size comparisons, fact captions.</p>
+      <code>/vault-film deep-sea descent, 3 minutes: how the barreleye fish sees through its own head</code>
+      <p class="links"><a href="sheets/deep-sea-descent.jpg">frame sheet</a> · <a href="../deep-sea-descent.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="silent-habit-film.mp4" autoplay loop muted playsinline></video>
+      <h2>8. Silent habit film</h2>
+      <p>Wordless 2D film, grey turning to colour.</p>
+      <code>/vault-film silent habit film, 3 minutes: a guitar bought a year ago and never played</code>
+      <p class="links"><a href="sheets/silent-habit-film.jpg">frame sheet</a> · <a href="../silent-habit-film.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="object-with-a-soul.mp4" autoplay loop muted playsinline></video>
+      <h2>9. Object with a soul</h2>
+      <p>Wordless film from a small object&#x27;s point of view.</p>
+      <code>/vault-film object with a soul, 4 minutes: an old radio in a house of headphones</code>
+      <p class="links"><a href="sheets/object-with-a-soul.jpg">frame sheet</a> · <a href="../object-with-a-soul.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="organ-sitcom.mp4" autoplay loop muted playsinline></video>
+      <h2>10. Organ sitcom</h2>
+      <p>A system played as bickering cartoon characters.</p>
+      <code>/vault-film organ sitcom, 3 minutes: your organs during a night with no sleep</code>
+      <p class="links"><a href="sheets/organ-sitcom.jpg">frame sheet</a> · <a href="../organ-sitcom.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="mascot-essay.mp4" autoplay loop muted playsinline></video>
+      <h2>11. Mascot essay</h2>
+      <p>One crude, likeable mascot explains real science beside clean diagrams.</p>
+      <code>/vault-film mascot essay, 5 minutes: five habits for good sleep, by an owl</code>
+      <p class="links"><a href="sheets/mascot-essay.jpg">frame sheet</a> · <a href="../mascot-essay.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="stickman-survival-serial.mp4" autoplay loop muted playsinline></video>
+      <h2>12. Stickman survival serial</h2>
+      <p>You, in a slow disaster: dark rooms, floor plans, real survival rules.</p>
+      <code>/vault-film stickman survival serial, part 1: 100 days without power</code>
+      <p class="links"><a href="sheets/stickman-survival-serial.jpg">frame sheet</a> · <a href="../stickman-survival-serial.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="untold-saga.mp4" autoplay loop muted playsinline></video>
+      <h2>13. Untold saga</h2>
+      <p>Long narrated drama on illustrated stills with parallax.</p>
+      <code>/vault-film untold saga, 7 minutes: the story of Tamar, on my own stills</code>
+      <p class="links"><a href="sheets/untold-saga.jpg">frame sheet</a> · <a href="../untold-saga.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="myth-vs-text.mp4" autoplay loop muted playsinline></video>
+      <h2>14. Myth versus the text</h2>
+      <p>A belief checked against its oldest source, then a timeline.</p>
+      <code>/vault-film myth versus the text, 6 minutes: a famous detail that is not in the original</code>
+      <p class="links"><a href="sheets/myth-vs-text.jpg">frame sheet</a> · <a href="../myth-vs-text.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="storybook-parable.mp4" autoplay loop muted playsinline></video>
+      <h2>15. Storybook parable</h2>
+      <p>Gentle fable on painted stills, often a cross-section.</p>
+      <code>/vault-film storybook parable, 4 minutes: a seed under a stone</code>
+      <p class="links"><a href="sheets/storybook-parable.jpg">frame sheet</a> · <a href="../storybook-parable.md">prompts</a></p>
+    </article>
+    <article>
+      <video src="mixed-engine-film.mp4" autoplay loop muted playsinline></video>
+      <h2>16. Mixed-engine film</h2>
+      <p>Several styles joined chapter by chapter, with one look and one mix.</p>
+      <code>/vault-film 5 minute saga, with one schematic chapter and one silent character scene</code>
+      <p class="links"><a href="sheets/mixed-engine-film.jpg">frame sheet</a> · <a href="../mixed-engine-film.md">prompts</a></p>
+    </article>
+  </main>
+</body></html>
