@@ -1,0 +1,61 @@
+# ── Secrets ──────────────────────────────────────────────
+# .env is written by `elevenlabs onboard` and holds the API key
+.env
+.env.*
+!.env.example
+
+# ── OS and editor junk ───────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ── Dependencies (reinstall with npm install / pip) ──────
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── HyperFrames and Remotion caches ──────────────────────
+.hyperframes/
+.thumbnails/
+.waveform-cache/
+.hf-segments/
+.remotion/
+
+# ── Rendered output (rebuild from the project) ───────────
+renders/
+out/
+*.mp4
+*.mov
+*.webm
+*.mkv
+# ...except the small sample clips that are part of the vault-film skill
+!skills/vault-film/prompt-guide/samples/*.mp4
+
+# ── Generated audio ──────────────────────────────────────
+# Narration, mixes and scores are WAV and regenerate from the script
+# (Kokoro) and the mix step. MP3 music and SFX stay tracked.
+*.wav
+# ...except sound effects, which are small and not regenerable
+!**/sfx/**/*.wav
+
+# ── Review artefacts ─────────────────────────────────────
+# Contact sheets and frame snapshots; the written review notes stay tracked
+**/review/**/*.png
+**/review/**/*.jpg
+**/review/**/*.jpeg
+*.log
+
+# ── Scratch and third-party checkouts ────────────────────
+temp/
+# Reference repos cloned from elsewhere (each has its own .git)
+similer/
+
+# ── Installed skills (restore from skills-lock.json) ─────
+.agents/
+.commandcode/
+.claude/skills/
+agent/
